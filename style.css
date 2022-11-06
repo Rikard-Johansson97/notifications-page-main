@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+:root {
+    --blue: hsl(219, 85%, 26%);
+    --light-blue: rgba(12, 162, 155, 0.9);
+    --comment-blue: rgba(3, 138, 255, 0.11);
+    --red: hsl(1, 90%, 64%); 
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'plus Jakarta sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+/* NAV ISH */
+.notification-center {
+    max-width: 578px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;   
+    margin: auto;
+}
+.notifications-container {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+.notification-count {
+    display: flex;
+}
+.title{
+    font-weight: 800;
+    font-size: 1.3rem;
+    margin: auto;
+}
+.count {
+    padding: 3px 10px;
+    border-radius: 5px;
+    background-color: var(--blue);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-left: 10px;
+}
+.mark-as-read {
+    font-weight: 600;
+    font-size: 1rem;
+    color: gray;
+}
+.mark-as-read:hover {
+    cursor: pointer;
+    color: var(--blue);
+}
+/* Activity */
+.activity-container {
+    margin: 10px 30px;
+}
+.post-container {
+    display: flex;
+    align-items: top;
+    line-height: 1.1rem;
+    margin-bottom: 40px;
+}
+.post-container img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+#name {
+    font-weight: 800;
+    color: black;
+    margin-right: 3px;
+}
+.text {
+    line-height: 1.2rem;
+    font-size: 1rem;
+    color: gray;
+    
+}
+.post-link {
+    margin-left: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--light-blue);
+}
+.post-link-group {
+    margin-left: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--blue);
+}
+.post-link:hover .post-link-group:hover {
+    cursor: pointer;
+}
+#not-marked{
+    margin-left: 5px;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: var(--red);
+    display: inline-block;
+}
+.day-count {
+    margin-top: 2px;
+    color: rgb(192, 192, 192);
+}
+.comment{
+    margin: 15px 20px 0 20px;
+    padding: 15px;
+    border: 1px rgba(192, 192, 192, 0.4) solid;
+    border-radius: 4px;
+    color: gray;
+}
+.comment:hover {
+    background-color: rgba(3, 138, 255, 0.11);
+    cursor: pointer;
+}
+.hover {
+    margin-left: 10px;
+}
+.hover:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 678px) {
+    * {
+        font-size: 18px
+    }
+    .notification-center {
+        max-width: 856px;
+    }
+}
